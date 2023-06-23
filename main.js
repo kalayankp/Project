@@ -84,13 +84,10 @@ const App = () => {
         },
       })}
       tabBarOptions={{
-        activeTintColor: 'blue',
+        activeTintColor: '#4c669f',
         inactiveTintColor: '#0078D7',
         showLabel: false,
         style: styles.tabBar,
-        borderTopWidth: 1,
-        borderTopColor: '#ddd',
-        elevation: 0,
       }}
     >
       <Tab.Screen name="Home" component={HomeStack} options={{ headerShown: false}}/>
@@ -120,20 +117,6 @@ const App = () => {
           <Stack.Screen
             name="Profile"
             component={ProfileScreen}
-            options={{
-  
-              headerStyle: {
-                backgroundColor: '#0078D7',
-              },
-              headerTintColor: '#fff',
-              headerTitleStyle: {
-                fontWeight: 'bold',
-              },
-            
-            }}/>
-             <Stack.Screen
-            name="TransferScreen"
-            component={TransactionsScreen}
             options={{
   
               headerStyle: {
@@ -263,9 +246,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
- 
+  profileIcon: {},
   tabBar: {
-    borderTopWidth: 4,
+    borderTopWidth: 1,
     borderTopColor: '#ddd',
     paddingBottom: 5,
     paddingTop: 5,

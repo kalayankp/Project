@@ -15,7 +15,7 @@ const SettingsCard = () => {
 const LogoutOption = () => (
   <TouchableOpacity style={styles.logoutContainer} activeOpacity={0.8}>
     <Ionicons name="log-out-outline" size={24} color="white" />
-    <Text style={styles.logoutText}>Logout</Text>
+    <Text style={styles.logoutText}>Log</Text>
   </TouchableOpacity>
 );
 

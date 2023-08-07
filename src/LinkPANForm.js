@@ -14,12 +14,12 @@ const LinkPANForm = () => {
   return (
     <View style={styles.container}>
       {panLinked ? (
-        <Text style={styles.successText}>PAN already linked</Text>
+        <Text style={styles.successText}>PAN already</Text>
       ) : (
         <>
           <TextInput
             style={styles.input}
-            placeholder="Enter PAN Number"
+            placeholder="Enter PAN Numbe"
             value={panNumber}
             onChangeText={setPanNumber}
           />
